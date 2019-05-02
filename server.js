@@ -1,10 +1,4 @@
-/***************|
-|* DEPENDECIES *|
-|***************/
-/* GENERAL */
-// Utilities for working with file and directory paths
 const path = require('path');
-// Load enviroment variables from .env into process.env
 require('dotenv').config()
 
 /* WEB FRAMEWORKS */

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
-import { XComponentOne, XComponentTwo } from '../../components/XComponent'
+import { ComponentOne, ComponentTwo } from '../../components/Component'
 
-class XPageTwo extends Component {
+class PageTwo extends Component {
   state = {
     array: ['X', 'PageTwo', 'Array'],
     string: 'XPageTwoString',
@@ -18,12 +18,12 @@ class XPageTwo extends Component {
   render() {
     return (<div>
       <Link to={"/"}>
-        <strong>Go to XPageOne</strong>
+        <strong>Go to PageOne</strong>
       </Link>
-      <XComponentOne array={this.state.array} string={this.state.string} />
-      <XComponentTwo array={this.state.array} string={this.state.string} />
+      <ComponentOne array={this.state.array} string={this.state.string} />
+      <ComponentTwo array={this.state.array} string={this.state.string} />
     </div>);
   }
 }
 
-export default XPageTwo;
+export default PageTwo;

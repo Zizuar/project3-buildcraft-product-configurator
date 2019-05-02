@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class XCollection extends Component {
+class Collection extends Component {
   state = {
     idparam: ''
   };
@@ -13,10 +13,10 @@ class XCollection extends Component {
   render() {
     return (
       <div>
-        Load XCollection with id:{this.state.idparam}
+        Load Collection with id:{this.state.idparam}
       </div>
     );
   }
 }
 
-export default XCollection;
+export default Collection;

@@ -1,7 +1,7 @@
 {
-  "name": "mern-bp",
+  "name": "project3-buildcraft-product-configurator",
   "version": "1.0.0",
-  "description": "Mern Boiler Plate",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",

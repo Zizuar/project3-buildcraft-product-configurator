@@ -1,16 +1,16 @@
 import React from 'react';
-import './XComponent.css';
+import './Component.css';
 
 // The ...props means, spread all of the passed props onto this element
 // That way we don't have to define them all individually
-const XComponentOne = (props) => {
+const ComponentTwo = (props) => {
   return (
-    <div className="XComponentClass" {...props}>
-    XComponentOne
+    <div className="ComponentClass" {...props}>
+    ComponentTwo
       {props.string}
       {props.array}
     </div>
   );
 }
 
-export { XComponentOne };
+export { ComponentTwo };

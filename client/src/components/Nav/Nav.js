@@ -1,12 +1,12 @@
 import React from 'react';
-import './XNav.css';
+import './Nav.css';
 
 // The ...props means, spread all of the passed props onto this element
 // That way we don't have to define them all individually
-const XNav = (props) => (
-  <span className="XNavClass" {...props}>
-    XNav
+const Nav = (props) => (
+  <span className="NavClass" {...props}>
+    Nav
   </span>
 );
 
-export { XNav };
+export { Nav };
