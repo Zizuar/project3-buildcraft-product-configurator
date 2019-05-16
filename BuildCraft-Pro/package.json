@@ -1,0 +1,31 @@
+{
+  "name": "buildcraft-pro",
+  "version": "0.8.1",
+  "description": "Product Configurator for Mass Customization Manufacturing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zizuar/project3-buildcraft-product-configurator.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react",
+    "mysql",
+    "mongo"
+  ],
+  "author": "Donald P. Polansky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zizuar/project3-buildcraft-product-configurator/issues"
+  },
+  "homepage": "https://github.com/Zizuar/project3-buildcraft-product-configurator#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "mysql": "^2.17.1"
+  }
+}
