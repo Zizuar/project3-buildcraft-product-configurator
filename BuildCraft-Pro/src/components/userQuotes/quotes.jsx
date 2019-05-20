@@ -53,7 +53,7 @@ class Quotes extends Component {
               <tr>
                 <th> Title </th>
                 <th> Product Line </th>
-                <th> Parts </th>
+                <th> Stock </th>
                 <th> Cost </th>
                 <th> Favorite </th>
                 <th />
@@ -65,7 +65,7 @@ class Quotes extends Component {
                   <td>{quote.title}</td>
                   <td>{quote.category.name}</td>
                   <td>{quote.numberInStock}</td>
-                  <td>{quote.dailyRentalRate}</td>
+                  <td>{quote.productAggCost}</td>
                   <td>
                     <Favorite
                       favorite={quote.favorite}

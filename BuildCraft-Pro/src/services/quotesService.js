@@ -3,68 +3,68 @@ import * as categoryAPI from "./categoryService";
 const quotes = [
   {
     _id: "5b21ca3eeb7f6fbccd471815",
-    title: "Terminator",
+    title: "Knotty Alder 3/4-lt. Ocean-Privacy",
     category: { _id: "5b21ca3eeb7f6fbccd471818", name: "WoodCraft" },
     numberInStock: 6,
-    dailyRentalRate: 2.5,
+    productAggCost: 27461,
     publishDate: "2018-01-03T19:04:28.809Z",
     favorite: true
   },
   {
     _id: "5b21ca3eeb7f6fbccd471816",
-    title: "Die Hard",
+    title: "Legacy Mahogany Full Lt. Tejas",
     category: { _id: "5b21ca3eeb7f6fbccd471818", name: "WoodCraft" },
     numberInStock: 5,
-    dailyRentalRate: 2.5
+    productAggCost: 22555
   },
   {
     _id: "5b21ca3eeb7f6fbccd471817",
-    title: "Get Out",
+    title: "KA-Grain 2-panel Florence Speakeasy",
     category: { _id: "5b21ca3eeb7f6fbccd471820", name: "FiberCraft" },
     numberInStock: 8,
-    dailyRentalRate: 3.5
+    productAggCost: 22464
   },
   {
     _id: "5b21ca3eeb7f6fbccd471819",
-    title: "Trip to Italy",
+    title: "TP-Solid Madrid Speakeasy SatinBlack",
     category: { _id: "5b21ca3eeb7f6fbccd471814", name: "ThermaPlus" },
     numberInStock: 7,
-    dailyRentalRate: 3.5
+    productAggCost: 1863
   },
   {
     _id: "5b21ca3eeb7f6fbccd47181a",
-    title: "Airplane",
+    title: "TP-Full Lt. Florence ORB-Satin",
     category: { _id: "5b21ca3eeb7f6fbccd471814", name: "ThermaPlus" },
     numberInStock: 7,
-    dailyRentalRate: 3.5
+    productAggCost: 7342
   },
   {
     _id: "5b21ca3eeb7f6fbccd47181b",
-    title: "Wedding Crashers",
+    title: "TP-3/4lt. Charelston SatinGrey",
     category: { _id: "5b21ca3eeb7f6fbccd471814", name: "ThermaPlus" },
     numberInStock: 7,
-    dailyRentalRate: 3.5
+    productAggCost: 2266
   },
   {
     _id: "5b21ca3eeb7f6fbccd47181e",
-    title: "Gone Girl",
+    title: "Amer. Blk Walnut Full-lt. Tejas",
     category: { _id: "5b21ca3eeb7f6fbccd471820", name: "FiberCraft" },
     numberInStock: 7,
-    dailyRentalRate: 4.5
+    productAggCost: 3845
   },
   {
     _id: "5b21ca3eeb7f6fbccd47181f",
-    title: "The Sixth Sense",
+    title: "Cherry-Grain 1/2-lt Charelston WI",
     category: { _id: "5b21ca3eeb7f6fbccd471820", name: "FiberCraft" },
     numberInStock: 4,
-    dailyRentalRate: 3.5
+    productAggCost: 2956
   },
   {
     _id: "5b21ca3eeb7f6fbccd471821",
-    title: "The Avengers",
+    title: "Portobello 3/4-lt Marsala",
     category: { _id: "5b21ca3eeb7f6fbccd471818", name: "WoodCraft" },
     numberInStock: 7,
-    dailyRentalRate: 3.5
+    productAggCost: 2654
   }
 ];
 
@@ -83,7 +83,7 @@ export function saveQuote(quote) {
     g => g._id === quote.categoryId
   );
   quoteInDb.numberInStock = quote.numberInStock;
-  quoteInDb.dailyRentalRate = quote.dailyRentalRate;
+  quoteInDb.productAggCost = quote.productAggCost;
 
   if (!quoteInDb._id) {
     quoteInDb._id = Date.now();
