@@ -1,31 +1,41 @@
 {
   "name": "buildcraft-pro",
-  "version": "0.8.1",
-  "description": "Product Configurator for Mass Customization Manufacturing",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zizuar/project3-buildcraft-product-configurator.git"
-  },
-  "keywords": [
-    "nodejs",
-    "react",
-    "mysql",
-    "mongo"
-  ],
-  "author": "Donald P. Polansky",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Zizuar/project3-buildcraft-product-configurator/issues"
-  },
-  "homepage": "https://github.com/Zizuar/project3-buildcraft-product-configurator#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "dotenv": "^8.0.0",
-    "express": "^4.16.4",
-    "mysql": "^2.17.1"
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "joi-browser": "^13.4.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "react-toastify": "^5.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
